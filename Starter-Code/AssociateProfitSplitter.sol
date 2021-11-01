@@ -27,7 +27,7 @@ contract AssociateProfitSplitter {
         employee_three.transfer(amount);
 
         // @TODO: take care of a potential remainder by sending back to HR (`msg.sender`)
-        msg.sender.transfer(msg.value - amount * 3));
+        msg.sender.transfer(msg.value - amount * 3);
     }
 
     function() external payable {
